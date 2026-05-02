@@ -5,25 +5,25 @@ import { prisma } from "@/lib/prisma";
 import { AdSlot } from "@/components/ui/AdSlot";
 
 export const metadata: Metadata = {
-  title: "Free CDL Practice Test 2026 — General Knowledge, Air Brakes, HazMat | CDLTestPrep",
+  title: "Free CDL Practice Test 2026 — General Knowledge, Air Brakes, HazMat | CDLPrepKit",
   description: "Free CDL practice tests for 2026. Study for General Knowledge, Air Brakes, HazMat, Combination Vehicles, and all CDL endorsements with 500+ real-style questions and instant pass/fail scoring.",
-  alternates: { canonical: "https://www.cdltestprep.com" },
+  alternates: { canonical: "https://www.cdlprepkit.com" },
   openGraph: {
     title: "Free CDL Practice Test 2026 — All Knowledge Exams",
     description: "Free CDL practice tests for General Knowledge, Air Brakes, HazMat, Combination Vehicles, and more. Instant scoring.",
-    url: "https://www.cdltestprep.com",
+    url: "https://www.cdlprepkit.com",
   },
 };
 
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "CDLTestPrep",
-  url: "https://www.cdltestprep.com",
+  name: "CDLPrepKit",
+  url: "https://www.cdlprepkit.com",
   description: "Free CDL knowledge test practice for all endorsements and CDL classes.",
   potentialAction: {
     "@type": "SearchAction",
-    target: { "@type": "EntryPoint", urlTemplate: "https://www.cdltestprep.com/endorsements?q={search_term_string}" },
+    target: { "@type": "EntryPoint", urlTemplate: "https://www.cdlprepkit.com/endorsements?q={search_term_string}" },
     "query-input": "required name=search_term_string",
   },
 };

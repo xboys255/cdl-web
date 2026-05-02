@@ -10,24 +10,24 @@ const adsenseClient = process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? "";
 
 export const metadata: Metadata = {
   title: {
-    default: "CDLTestPrep — Free CDL Practice Tests 2026",
-    template: "%s | CDLTestPrep",
+    default: "CDLPrepKit — Free CDL Practice Tests 2026",
+    template: "%s | CDLPrepKit",
   },
   description: "Free CDL practice tests for General Knowledge, Air Brakes, HazMat, Combination Vehicles, and more. Instant scoring and state-by-state requirements.",
-  metadataBase: new URL("https://www.cdltestprep.com"),
+  metadataBase: new URL("https://www.cdlprepkit.com"),
   openGraph: {
     type: "website",
-    siteName: "CDLTestPrep",
-    title: "CDLTestPrep — Free CDL Practice Tests 2026",
+    siteName: "CDLPrepKit",
+    title: "CDLPrepKit — Free CDL Practice Tests 2026",
     description: "Free CDL practice tests for General Knowledge, Air Brakes, HazMat, Combination Vehicles, and more.",
-    url: "https://www.cdltestprep.com",
+    url: "https://www.cdlprepkit.com",
   },
   twitter: {
     card: "summary_large_image",
-    title: "CDLTestPrep — Free CDL Practice Tests",
+    title: "CDLPrepKit — Free CDL Practice Tests",
     description: "Free practice tests for every CDL knowledge exam. Instant scoring and pass/fail feedback.",
   },
-  alternates: { canonical: "https://www.cdltestprep.com" },
+  alternates: { canonical: "https://www.cdlprepkit.com" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -46,7 +46,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <nav className="bg-white border-b border-gray-200 sticky top-0 z-40">
           <div className="max-w-4xl mx-auto px-4 h-14 flex items-center justify-between">
             <Link href="/" className="font-extrabold text-orange-600 text-lg tracking-tight">
-              CDL<span className="text-gray-900">TestPrep</span>
+              CDL<span className="text-gray-900">PrepKit</span>
             </Link>
             <div className="flex items-center gap-1">
               <Link href="/tests" className="px-3 py-1.5 text-sm font-medium text-gray-600 hover:text-orange-600 hover:bg-gray-50 rounded-lg transition-colors">
@@ -73,7 +73,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer className="border-t border-gray-200 bg-white mt-auto">
           <div className="max-w-4xl mx-auto px-4 py-6 flex flex-col sm:flex-row items-center justify-between gap-3">
             <div className="text-sm text-gray-500 text-center sm:text-left space-y-1">
-              <p>© {new Date().getFullYear()} CDLTestPrep — Free CDL knowledge test practice.</p>
+              <p>© {new Date().getFullYear()} CDLPrepKit — Free CDL knowledge test practice.</p>
               <p className="text-xs text-gray-400">
                 Not affiliated with FMCSA or any state DMV. CDL requirements vary by state — verify with your local licensing authority.
               </p>

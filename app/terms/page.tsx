@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Terms of Use | CDLTestPrep",
-  description: "Terms of use for CDLTestPrep.com — unofficial CDL practice tests for educational purposes only.",
+  title: "Terms of Use | CDLPrepKit",
+  description: "Terms of use for CDLPrepKit.com — unofficial CDL practice tests for educational purposes only.",
 };
 
 export default function TermsPage() {
@@ -15,7 +15,7 @@ export default function TermsPage() {
       </div>
 
       <div className="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 text-sm text-amber-800">
-        <strong>Important:</strong> CDLTestPrep.com provides unofficial practice questions for educational purposes only.
+        <strong>Important:</strong> CDLPrepKit.com provides unofficial practice questions for educational purposes only.
         It is not affiliated with FMCSA, any state DMV, or any official CDL testing authority.
       </div>
 
@@ -23,24 +23,24 @@ export default function TermsPage() {
         <section>
           <h2 className="text-xl font-bold text-gray-900 mb-2">1. Acceptance of Terms</h2>
           <p>
-            By accessing or using CDLTestPrep.com, you agree to be bound by these Terms of Use. If you do not agree, please do not use the site.
+            By accessing or using CDLPrepKit.com, you agree to be bound by these Terms of Use. If you do not agree, please do not use the site.
           </p>
         </section>
 
         <section>
           <h2 className="text-xl font-bold text-gray-900 mb-2">2. Educational Use Only</h2>
           <p>
-            All practice questions, answers, and explanations on CDLTestPrep.com are for educational and practice purposes only. They are not official CDL exam questions and are not sourced from the actual CDL knowledge tests administered by state DMVs.
+            All practice questions, answers, and explanations on CDLPrepKit.com are for educational and practice purposes only. They are not official CDL exam questions and are not sourced from the actual CDL knowledge tests administered by state DMVs.
           </p>
           <p className="mt-2">
-            Your scores on CDLTestPrep.com do not predict, guarantee, or reflect your performance on any official CDL examination. Always study from your state&apos;s official Commercial Driver License Manual and official FMCSA resources.
+            Your scores on CDLPrepKit.com do not predict, guarantee, or reflect your performance on any official CDL examination. Always study from your state&apos;s official Commercial Driver License Manual and official FMCSA resources.
           </p>
         </section>
 
         <section>
           <h2 className="text-xl font-bold text-gray-900 mb-2">3. No Affiliation</h2>
           <p>
-            CDLTestPrep.com is not affiliated with, endorsed by, or connected to the Federal Motor Carrier Safety Administration (FMCSA), any state Department of Motor Vehicles (DMV), or any official CDL testing program.
+            CDLPrepKit.com is not affiliated with, endorsed by, or connected to the Federal Motor Carrier Safety Administration (FMCSA), any state Department of Motor Vehicles (DMV), or any official CDL testing program.
           </p>
         </section>
 
@@ -54,14 +54,14 @@ export default function TermsPage() {
         <section>
           <h2 className="text-xl font-bold text-gray-900 mb-2">5. Limitation of Liability</h2>
           <p>
-            CDLTestPrep.com shall not be liable for any direct, indirect, incidental, or consequential damages arising from your use of or inability to use this site, including reliance on any content provided herein.
+            CDLPrepKit.com shall not be liable for any direct, indirect, incidental, or consequential damages arising from your use of or inability to use this site, including reliance on any content provided herein.
           </p>
         </section>
 
         <section>
           <h2 className="text-xl font-bold text-gray-900 mb-2">6. Intellectual Property</h2>
           <p>
-            All content on CDLTestPrep.com, including practice questions, explanations, and site design, is owned by CDLTestPrep.com and may not be copied, reproduced, or distributed without written permission.
+            All content on CDLPrepKit.com, including practice questions, explanations, and site design, is owned by CDLPrepKit.com and may not be copied, reproduced, or distributed without written permission.
           </p>
         </section>
 

@@ -5,12 +5,12 @@ import Link from "next/link";
 import { AdSlot } from "@/components/ui/AdSlot";
 
 export const metadata: Metadata = {
-  title: "CDL Endorsements & Requirements — H, N, P, T, S, X | CDLTestPrep",
+  title: "CDL Endorsements & Requirements — H, N, P, T, S, X | CDLPrepKit",
   description: "Complete guide to all CDL endorsements: HazMat (H), Tanker (N), Passenger (P), Doubles/Triples (T), School Bus (S), and X. Requirements, knowledge tests, and job types.",
   openGraph: {
     title: "CDL Endorsements — H, N, P, T, S, X Requirements",
     description: "Guide to every CDL endorsement, what knowledge test is required, and which driving jobs need them.",
-    url: "https://www.cdltestprep.com/endorsements",
+    url: "https://www.cdlprepkit.com/endorsements",
   },
 };
 

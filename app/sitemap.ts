@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { posts } from "@/lib/blog";
 
-const BASE = "https://www.cdltestprep.com";
+const BASE = "https://www.cdlprepkit.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

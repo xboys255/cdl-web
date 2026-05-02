@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | CDLTestPrep",
-  description: "Privacy policy for CDLTestPrep.com — how we collect, use, and protect your data.",
+  title: "Privacy Policy | CDLPrepKit",
+  description: "Privacy policy for CDLPrepKit.com — how we collect, use, and protect your data.",
 };
 
 export default function PrivacyPage() {
@@ -18,7 +18,7 @@ export default function PrivacyPage() {
         <section>
           <h2 className="text-xl font-bold text-gray-900 mb-2">1. Information We Collect</h2>
           <p>
-            CDLTestPrep.com does not require account registration. We collect minimal data necessary to operate the service, including:
+            CDLPrepKit.com does not require account registration. We collect minimal data necessary to operate the service, including:
           </p>
           <ul className="list-disc pl-5 mt-2 space-y-1">
             <li>Anonymous session data (test answers, scores) stored temporarily to show your results</li>
@@ -65,7 +65,7 @@ export default function PrivacyPage() {
         <section>
           <h2 className="text-xl font-bold text-gray-900 mb-2">6. Children&apos;s Privacy</h2>
           <p>
-            CDLTestPrep.com is intended for adults pursuing a Commercial Driver&apos;s License. We do not knowingly collect information from children under 13.
+            CDLPrepKit.com is intended for adults pursuing a Commercial Driver&apos;s License. We do not knowingly collect information from children under 13.
           </p>
         </section>
 

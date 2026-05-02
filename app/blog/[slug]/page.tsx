@@ -15,12 +15,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = getPost(slug);
   if (!post) return {};
   return {
-    title: `${post.title} | CDLTestPrep`,
+    title: `${post.title} | CDLPrepKit`,
     description: post.description,
     openGraph: {
       title: post.title,
       description: post.description,
-      url: `https://www.cdltestprep.com/blog/${post.slug}`,
+      url: `https://www.cdlprepkit.com/blog/${post.slug}`,
       type: "article",
       publishedTime: post.date,
     },
@@ -39,13 +39,13 @@ export default async function BlogPostPage({ params }: Props) {
     description: post.description,
     datePublished: post.date,
     dateModified: post.date,
-    author: { "@type": "Organization", name: "CDLTestPrep" },
+    author: { "@type": "Organization", name: "CDLPrepKit" },
     publisher: {
       "@type": "Organization",
-      name: "CDLTestPrep",
-      url: "https://www.cdltestprep.com",
+      name: "CDLPrepKit",
+      url: "https://www.cdlprepkit.com",
     },
-    mainEntityOfPage: { "@type": "WebPage", "@id": `https://www.cdltestprep.com/blog/${post.slug}` },
+    mainEntityOfPage: { "@type": "WebPage", "@id": `https://www.cdlprepkit.com/blog/${post.slug}` },
   };
 
   // Related posts (same category, different slug)
