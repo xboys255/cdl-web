@@ -1,0 +1,111 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum Difficulty {
+  easy
+  medium
+  hard
+}
+
+enum TestType {
+  GENERAL_KNOWLEDGE
+  AIR_BRAKES
+  COMBINATION
+  HAZMAT
+  PASSENGER
+  TANKER
+  DOUBLES_TRIPLES
+  SCHOOL_BUS
+}
+
+model Test {
+  id          String        @id @default(cuid())
+  slug        String        @unique
+  name        String
+  type        TestType
+  description String
+  timeLimit   Int
+  passScore   Int           @default(80)
+  sections    Section[]
+  sessions    TestSession[]
+  createdAt   DateTime      @default(now())
+}
+
+model Section {
+  id            String     @id @default(cuid())
+  testId        String
+  test          Test       @relation(fields: [testId], references: [id])
+  name          String
+  code          String
+  description   String?
+  timeLimit     Int?
+  questionCount Int
+  questions     Question[]
+  createdAt     DateTime   @default(now())
+
+  @@unique([testId, code])
+}
+
+model Question {
+  id             String          @id @default(cuid())
+  sectionId      String
+  section        Section         @relation(fields: [sectionId], references: [id])
+  text           String
+  imageUrl       String?
+  difficulty     Difficulty
+  explanation    String
+  answers        Answer[]
+  sessionAnswers SessionAnswer[]
+  createdAt      DateTime        @default(now())
+}
+
+model Answer {
+  id             String          @id @default(cuid())
+  questionId     String
+  question       Question        @relation(fields: [questionId], references: [id])
+  text           String
+  isCorrect      Boolean
+  sessionAnswers SessionAnswer[]
+}
+
+model TestSession {
+  id          String          @id @default(cuid())
+  testId      String
+  test        Test            @relation(fields: [testId], references: [id])
+  sectionCode String?
+  mode        String
+  difficulty  Difficulty?
+  totalQ      Int
+  startedAt   DateTime        @default(now())
+  submittedAt DateTime?
+  answers     SessionAnswer[]
+}
+
+model SessionAnswer {
+  id         String      @id @default(cuid())
+  sessionId  String
+  session    TestSession @relation(fields: [sessionId], references: [id])
+  questionId String
+  question   Question    @relation(fields: [questionId], references: [id])
+  answerId   String?
+  answer     Answer?     @relation(fields: [answerId], references: [id])
+  flagged    Boolean     @default(false)
+  createdAt  DateTime    @default(now())
+
+  @@unique([sessionId, questionId])
+}
+
+model CDLEndorsement {
+  id          String   @id @default(cuid())
+  code        String   @unique
+  name        String
+  description String
+  cdlClass    String   // A, B, C, or "all"
+  testSlug    String?  // which knowledge test is required
+  createdAt   DateTime @default(now())
+}
