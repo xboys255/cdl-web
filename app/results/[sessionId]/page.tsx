@@ -6,6 +6,8 @@ import { pct } from "@/lib/utils";
 import type { SectionScores } from "@/lib/scoring";
 import { ReviewSection } from "./ReviewSection";
 import { AdSlot } from "@/components/ui/AdSlot";
+import { ShareButton } from "@/components/ui/ShareButton";
+import { SaveProgress } from "@/components/ui/SaveProgress";
 import Link from "next/link";
 
 interface Props { params: Promise<{ sessionId: string }> }
@@ -182,6 +184,15 @@ export default async function ResultsPage({ params }: Props) {
         {/* Question review */}
         <ReviewSection items={reviewItems} />
 
+        {/* Save progress silently */}
+        <SaveProgress
+          testSlug={session.test.slug}
+          testName={session.test.name}
+          score={overallPct}
+          passed={passed}
+          date={new Date().toISOString()}
+        />
+
         {/* Bottom CTA */}
         <div className="flex flex-wrap gap-3 justify-center">
           <Link href={`/start?test=${session.test.slug}&mode=full`} className="px-5 py-2.5 text-sm font-semibold text-white bg-orange-600 rounded-lg hover:bg-orange-700">
@@ -190,10 +201,16 @@ export default async function ResultsPage({ params }: Props) {
           <Link href="/tests" className="px-5 py-2.5 text-sm font-medium text-gray-700 bg-white border border-gray-200 rounded-lg hover:bg-gray-50">
             All Tests
           </Link>
+          <Link href="/progress" className="px-5 py-2.5 text-sm font-medium text-gray-700 bg-white border border-gray-200 rounded-lg hover:bg-gray-50">
+            My Progress
+          </Link>
           <Link href="/" className="px-5 py-2.5 text-sm font-medium text-gray-700 bg-white border border-gray-200 rounded-lg hover:bg-gray-50">
             Home
           </Link>
         </div>
+
+        {/* Share score */}
+        <ShareButton score={overallPct} passed={passed} testName={session.test.name} />
 
         <AdSlot slot="results-bottom" format="banner" />
       </div>

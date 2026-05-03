@@ -93,6 +93,12 @@ export default async function TestsPage() {
                 >
                   Quick Quiz
                 </Link>
+                <Link
+                  href={`/flashcards/${test.slug}`}
+                  className="px-4 py-2 text-sm font-medium text-purple-600 bg-purple-50 rounded-lg hover:bg-purple-100 text-center"
+                >
+                  Flashcards
+                </Link>
               </div>
             </div>
 

@@ -555,6 +555,300 @@ export const posts: BlogPost[] = [
 </ul>
     `,
   },
+  // ── Batch 2 posts ──────────────────────────────────────────────────────
+  {
+    slug: "cdl-combination-vehicles-test-guide",
+    title: "CDL Combination Vehicles Test: Complete Study Guide",
+    description: "The Combination Vehicles test is required for Class A CDL. Learn the key topics — coupling, uncoupling, air lines, anti-jackknife, and more.",
+    date: "2026-05-01",
+    readTime: "7 min read",
+    category: "Study Guides",
+    content: `
+<p>If you&apos;re pursuing a Class A CDL, the Combination Vehicles knowledge test is mandatory. It covers the skills and systems specific to operating a tractor-trailer — from coupling and uncoupling to preventing jackknifes on slippery roads.</p>
+
+<h2>Test Format</h2>
+<ul>
+  <li><strong>Questions:</strong> 20 multiple-choice questions</li>
+  <li><strong>Passing score:</strong> 80% (16 out of 20)</li>
+</ul>
+
+<h2>Key Topic Areas</h2>
+
+<h3>Coupling and Uncoupling</h3>
+<p>Expect several questions on the proper step-by-step procedure to safely couple a tractor to a semi-trailer and uncouple them. Know the order: position tractor, check trailer height, back slowly, connect air lines, raise landing gear, secure the connection, and always tug-test.</p>
+
+<h3>Air Lines (Glad Hands)</h3>
+<p>The emergency (supply) line is red. The service line is blue. You must connect the emergency line first and disconnect it last. Cross-connecting these lines is a common mistake — and a common test question.</p>
+
+<h3>Landing Gear</h3>
+<p>Landing gear must be fully raised before driving. Low gear is used when the trailer is loaded; high gear is used for light or empty trailers. Never drive with the landing gear partially lowered.</p>
+
+<h3>Fifth Wheel Inspection</h3>
+<p>After coupling, the fifth wheel jaws must be fully closed and locked around the kingpin. Pull the release handle and confirm it won&apos;t open. Check that the trailer sits flat on the fifth wheel with no gap.</p>
+
+<h3>Anti-Jackknife and Skid Prevention</h3>
+<p>Jackknifing occurs when the tractor and trailer fold at the coupling point — usually caused by excessive braking, especially of the drive axles. To prevent it: brake smoothly, avoid locking the wheels, and steer into a skid. ABS systems help but don&apos;t eliminate the risk.</p>
+
+<h3>Rearward Amplification</h3>
+<p>When a combination vehicle swerves or changes lanes quickly, the rear trailer swings wider than the tractor (the &quot;crack the whip&quot; effect). This risk increases with double and triple trailer combinations. Take lane changes slowly and avoid sudden maneuvers.</p>
+
+<h3>Off-Tracking</h3>
+<p>The rear wheels of a trailer track inside the path of the front wheels during turns. The longer the combination, the more off-tracking occurs. Account for this by turning wider than you normally would — but not so wide that you enter the wrong lane.</p>
+
+<h2>Study Tips</h2>
+<ol>
+  <li>Memorize the air line colors (red = emergency, blue = service)</li>
+  <li>Practice the coupling/uncoupling steps in order — they appear as sequence questions</li>
+  <li>Know what causes jackknifing and how to recover</li>
+  <li>Take several Combination Vehicles practice tests before your exam</li>
+</ol>
+    `,
+  },
+  {
+    slug: "how-long-does-it-take-to-get-a-cdl",
+    title: "How Long Does It Take to Get a CDL in 2026?",
+    description: "From CLP application to CDL in hand — here's a realistic timeline for how long the CDL process takes, whether you go through a school or self-study.",
+    date: "2026-04-28",
+    readTime: "5 min read",
+    category: "Getting Started",
+    content: `
+<p>One of the most common questions from CDL applicants: &quot;How long will this take?&quot; The answer depends on whether you attend a CDL school or self-study, how quickly you can schedule DMV appointments, and how fast you can get comfortable behind the wheel.</p>
+
+<h2>The Minimum Legal Timeline</h2>
+<p>Federal regulations require you to hold a Commercial Learner&apos;s Permit (CLP) for at least <strong>14 days</strong> before taking the CDL skills test. That&apos;s the floor — the actual timeline is almost always longer.</p>
+
+<h2>Typical Timelines by Path</h2>
+
+<h3>CDL Training School (Most Common)</h3>
+<ul>
+  <li><strong>Class A CDL:</strong> 4–8 weeks full-time</li>
+  <li><strong>Class B CDL:</strong> 2–4 weeks full-time</li>
+</ul>
+<p>Schools handle scheduling and often have dedicated DMV test slots. You leave with your CDL in 3–8 weeks total depending on the program.</p>
+
+<h3>Company-Sponsored Training</h3>
+<p>Many large carriers (Werner, KLLM, Prime, Swift) offer paid CDL training programs. You work for them for 1–2 years in exchange for the training. Total time to a CDL: 4–8 weeks, similar to a private school.</p>
+
+<h3>Self-Study Path</h3>
+<ul>
+  <li>Study for knowledge tests: 1–4 weeks</li>
+  <li>Schedule and pass CLP tests at DMV: 1–2 weeks (wait for appointment)</li>
+  <li>Hold CLP for 14+ days</li>
+  <li>Find a CDL holder to practice with</li>
+  <li>Schedule skills test: 2–4 weeks wait in many states</li>
+</ul>
+<p>Self-study can take 2–4 months total, but costs significantly less than a private school ($0–$500 vs $3,000–$10,000).</p>
+
+<h2>What Slows People Down?</h2>
+<ul>
+  <li>DMV appointment availability (some states have 3–6 week waits)</li>
+  <li>Failing a knowledge test and waiting to retake</li>
+  <li>Scheduling issues for the skills test</li>
+  <li>DOT medical exam delays or issues</li>
+</ul>
+
+<h2>Tips to Speed Up the Process</h2>
+<ol>
+  <li>Schedule your DMV knowledge test appointment the same day you start studying</li>
+  <li>Book your skills test date immediately after passing the CLP — don&apos;t wait</li>
+  <li>Complete your DOT physical before applying for the CLP</li>
+  <li>Practice tests daily to pass the knowledge exams on your first try</li>
+</ol>
+    `,
+  },
+  {
+    slug: "cdl-doubles-triples-endorsement-guide",
+    title: "CDL Doubles & Triples Endorsement (T): What You Need to Know",
+    description: "The T endorsement lets you pull double and triple trailers. Learn the test topics, vehicle requirements, and jobs that need this endorsement.",
+    date: "2026-04-22",
+    readTime: "5 min read",
+    category: "Endorsements",
+    content: `
+<p>The CDL Doubles and Triples endorsement (T endorsement) is required to operate commercial vehicles towing two or three trailers simultaneously. It&apos;s one of the more specialized CDL endorsements — and can open doors to higher-paying freight positions.</p>
+
+<h2>When Is the T Endorsement Required?</h2>
+<p>You need the T endorsement when:</p>
+<ul>
+  <li>Pulling a set of doubles (two 28-foot trailers) or triples (three 28-foot trailers)</li>
+  <li>Operating any combination vehicle with more than one trailer</li>
+</ul>
+<p>Doubles/triples are most common in LTL (less-than-truckload) freight, package delivery, and some regional trucking operations.</p>
+
+<h2>Test Format</h2>
+<ul>
+  <li><strong>Questions:</strong> ~20 questions (varies by state)</li>
+  <li><strong>Passing score:</strong> 80%</li>
+  <li>No separate skills test required — the T endorsement is knowledge-only</li>
+</ul>
+
+<h2>Key Test Topics</h2>
+
+<h3>Coupling Doubles and Triples</h3>
+<p>Coupling multiple trailers requires connecting a converter dolly between trailers. Know the proper sequence: couple the second trailer to the dolly, then couple the whole unit to the first trailer. Always inspect all connections before moving.</p>
+
+<h3>Converter Dolly</h3>
+<p>A converter dolly is a small set of axles with a fifth wheel used to connect additional trailers in a double or triple combination. It must be inspected like any other vehicle component — including lights, tires, and coupling hardware.</p>
+
+<h3>Rearward Amplification</h3>
+<p>Rearward amplification (&quot;crack the whip&quot;) is more severe with doubles and especially triples. The last trailer swings much wider than the tractor when you change lanes or swerve. Drive smoothly and avoid sudden steering inputs.</p>
+
+<h3>Off-Tracking</h3>
+<p>Off-tracking is greater with longer combinations. Wide turns are necessary — but make sure you don&apos;t drift into other lanes.</p>
+
+<h3>Brake Timing</h3>
+<p>With multiple trailers, braking forces are unequal. The rear trailer receives braking signals slightly later than the front, which can cause the combination to compress and become unstable. Apply brakes gradually and well in advance.</p>
+
+<h2>Who Hires Drivers with a T Endorsement?</h2>
+<ul>
+  <li>FedEx Freight — extensively uses doubles combinations</li>
+  <li>UPS Freight</li>
+  <li>ABF Freight</li>
+  <li>Most LTL carriers that operate on the Western US double/triple legal states</li>
+</ul>
+<p>Note: Doubles and triples are not legal in all states. The Western US (especially the &quot;long combination vehicle&quot; states) are the main markets.</p>
+    `,
+  },
+  {
+    slug: "dot-physical-cdl-medical-requirements",
+    title: "DOT Physical: CDL Medical Requirements Explained",
+    description: "A DOT medical examination is required for most CDL holders. Learn what the physical tests for, how to find a certified examiner, and what can disqualify you.",
+    date: "2026-04-18",
+    readTime: "6 min read",
+    category: "CDL Basics",
+    content: `
+<p>Before you can drive a commercial vehicle, federal law requires you to pass a Department of Transportation (DOT) physical examination and carry a valid medical certificate. Here&apos;s everything you need to know.</p>
+
+<h2>Who Needs a DOT Physical?</h2>
+<p>Any CDL holder who operates in interstate commerce must maintain a current DOT medical certificate. Many intrastate operators are also required to pass a DOT physical depending on state rules. Check with your state DMV for specifics.</p>
+
+<h2>What Does the DOT Physical Test?</h2>
+
+<h3>Vision</h3>
+<p>You must have at least 20/40 vision in each eye (with or without corrective lenses) and a horizontal field of vision of at least 70 degrees in each eye. You must be able to distinguish traffic signal colors.</p>
+
+<h3>Hearing</h3>
+<p>You must be able to perceive a forced whispered voice in your better ear at 5 feet or more (with or without a hearing aid).</p>
+
+<h3>Blood Pressure</h3>
+<p>High blood pressure is a common reason for conditional certification. Blood pressure must be below 140/90 to receive a 2-year certificate. Higher readings result in shorter certification periods and may require treatment.</p>
+
+<h3>Diabetes</h3>
+<p>Insulin-treated diabetics were previously disqualified from CDL driving but FMCSA now has a diabetes exemption program. Oral medication for diabetes generally does not disqualify you.</p>
+
+<h3>Sleep Apnea</h3>
+<p>Untreated sleep apnea is disqualifying. If you&apos;re diagnosed, you must show compliance with treatment (typically CPAP therapy) to receive medical certification.</p>
+
+<h3>Other Conditions</h3>
+<p>Examiners will also check for heart conditions, neurological disorders, vision or hearing impairments, and substance abuse history — all of which can affect certification.</p>
+
+<h2>How to Find a Certified Examiner</h2>
+<p>Your DOT physical must be performed by a medical examiner listed on the FMCSA National Registry. Find one at <strong>nationalregistry.fmcsa.dot.gov</strong>. Many urgent care clinics, occupational health clinics, and some chiropractors are certified.</p>
+
+<h2>Medical Certificate Duration</h2>
+<ul>
+  <li><strong>2 years</strong> — standard for healthy drivers</li>
+  <li><strong>1 year or less</strong> — for drivers with certain controlled conditions (blood pressure, diabetes)</li>
+</ul>
+
+<h2>How to Prepare</h2>
+<ol>
+  <li>Bring a list of all current medications and dosages</li>
+  <li>Bring your glasses or contacts if you use them</li>
+  <li>Bring your hearing aids if you wear them</li>
+  <li>Know your medical history — past surgeries, diagnoses, hospitalizations</li>
+  <li>Avoid caffeine before the exam to keep blood pressure accurate</li>
+</ol>
+    `,
+  },
+  {
+    slug: "cdl-study-mistakes-to-avoid",
+    title: "7 CDL Study Mistakes That Cause People to Fail the Test",
+    description: "Avoid these common CDL study mistakes that cost drivers their passing score. Smart preparation beats cramming every time.",
+    date: "2026-04-12",
+    readTime: "4 min read",
+    category: "Test Tips",
+    content: `
+<p>Most CDL knowledge test failures aren&apos;t due to lack of intelligence — they&apos;re due to avoidable preparation mistakes. Here are the seven most common ones.</p>
+
+<h2>1. Reading the Manual Without Testing Yourself</h2>
+<p>Reading is passive. The CDL exam requires active recall. You might read a section and think you understand it, but struggle when a question asks it in an unfamiliar way. Always follow each manual section with practice questions.</p>
+
+<h2>2. Skipping the Air Brakes Section</h2>
+<p>Many applicants skip the Air Brakes test thinking they won&apos;t need it. This adds the dreaded &quot;L restriction&quot; to your license, preventing you from driving most heavy commercial vehicles. Unless you&apos;re 100% certain you&apos;ll never need air brakes, take and pass this test.</p>
+
+<h2>3. Not Memorizing Key Numbers</h2>
+<p>The CDL test is full of specific values. Know these cold:</p>
+<ul>
+  <li>80% — passing score for all knowledge tests</li>
+  <li>60 psi — low air pressure warning activation</li>
+  <li>15–50 feet — stop distance from railroad tracks</li>
+  <li>1,000 gallons — threshold requiring Tanker endorsement</li>
+  <li>14 days — minimum CLP holding period</li>
+  <li>4/32 inch — minimum front tire tread depth</li>
+</ul>
+
+<h2>4. Memorizing Answers Instead of Understanding Concepts</h2>
+<p>Practice test websites sometimes let you memorize answer patterns. But on the real exam, questions are worded differently. Focus on understanding WHY an answer is correct — the concept will serve you on any phrasing.</p>
+
+<h2>5. Cramming the Night Before</h2>
+<p>Spaced repetition beats cramming. Study over 1–2 weeks, revisit missed questions daily, and do a light review the morning of your test. Cramming leads to fatigue and memory confusion on test day.</p>
+
+<h2>6. Ignoring the HazMat Section in General Knowledge</h2>
+<p>Even without a HazMat endorsement, the General Knowledge test includes basic HazMat questions. Many applicants skip this thinking it doesn&apos;t apply to them — and then miss 2–3 questions that cost them the passing score.</p>
+
+<h2>7. Not Reviewing Wrong Answers</h2>
+<p>After each practice test, don&apos;t just check your score. Read the explanation for every wrong answer. Understanding why you got something wrong is the fastest way to not get it wrong again.</p>
+
+<h2>The Bottom Line</h2>
+<p>Treat your CDL knowledge tests like a real exam — because they are. Study consistently over multiple days, practice with questions that match the real format, and go into test day rested and confident.</p>
+    `,
+  },
+  {
+    slug: "best-cdl-jobs-salaries-2026",
+    title: "Best CDL Trucking Jobs and Salaries in 2026",
+    description: "A breakdown of the best CDL jobs by pay, lifestyle, and requirements — from OTR long-haul to local delivery, tanker, and owner-operator.",
+    date: "2026-04-08",
+    readTime: "6 min read",
+    category: "CDL Basics",
+    content: `
+<p>Getting your CDL opens the door to dozens of driving careers — each with different pay, home time, lifestyle, and vehicle requirements. Here&apos;s a breakdown of the top options in 2026.</p>
+
+<h2>Over-the-Road (OTR) Long-Haul Trucking</h2>
+<p><strong>Salary:</strong> $55,000–$90,000+/year</p>
+<p>OTR drivers run long routes across multiple states, sometimes spending weeks away from home. The trade-off for lower home time is higher pay and mileage bonuses. Class A CDL required; air brakes and combination endorsements essential.</p>
+
+<h2>Regional Trucking</h2>
+<p><strong>Salary:</strong> $55,000–$75,000/year</p>
+<p>Regional drivers cover a multi-state area and typically get home every week or every other week. A good balance between pay and home time. Class A CDL required.</p>
+
+<h2>Local/City Delivery</h2>
+<p><strong>Salary:</strong> $45,000–$70,000/year</p>
+<p>Local drivers are home every night. Routes cover a single metro area. Often involves physical work (loading/unloading). Class A or B depending on vehicle size.</p>
+
+<h2>Flatbed Trucking</h2>
+<p><strong>Salary:</strong> $60,000–$85,000/year</p>
+<p>Flatbed drivers haul construction materials, machinery, and oversized loads. Requires additional skills like tarping, chaining, and securing cargo. Class A CDL. Physical work but higher pay.</p>
+
+<h2>Tanker Driving</h2>
+<p><strong>Salary:</strong> $65,000–$100,000+/year</p>
+<p>Tanker drivers haul liquid or gas cargo — fuel, chemicals, food-grade liquids, or compressed gas. Requires the N (Tanker) endorsement and often the H (HazMat) endorsement. One of the highest-paying CDL jobs.</p>
+
+<h2>HazMat Specialist</h2>
+<p><strong>Salary:</strong> $65,000–$95,000/year</p>
+<p>Drivers with both HazMat and Tanker endorsements (X endorsement) command premium rates. TSA background check required. Strong demand from the chemical and petroleum industries.</p>
+
+<h2>Bus Driver (Transit/Coach)</h2>
+<p><strong>Salary:</strong> $45,000–$70,000/year</p>
+<p>Transit bus drivers work for city transportation agencies. Coach and charter bus drivers work for private companies. Class B CDL with Passenger (P) endorsement required. Strong job security and often good benefits.</p>
+
+<h2>Owner-Operator</h2>
+<p><strong>Salary:</strong> $80,000–$200,000+ gross (before expenses)</p>
+<p>Owner-operators own their truck and run independently or under a carrier&apos;s authority. Much higher earning potential but also higher risk — you pay for fuel, maintenance, insurance, and downtime. Usually requires 1–2 years of company driving experience first.</p>
+
+<h2>Which Job Is Right for You?</h2>
+<p>If you want the highest pay and don&apos;t mind being away from home, OTR or tanker driving offers the best earning potential. If home time matters most, go local or regional. If you want long-term career growth, owner-operator is the goal many drivers work toward.</p>
+    `,
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {

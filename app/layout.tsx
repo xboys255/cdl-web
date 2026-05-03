@@ -55,11 +55,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/quiz" className="px-3 py-1.5 text-sm font-medium text-gray-600 hover:text-orange-600 hover:bg-gray-50 rounded-lg transition-colors">
                 Quick Quiz
               </Link>
+              <Link href="/flashcards" className="px-3 py-1.5 text-sm font-medium text-gray-600 hover:text-orange-600 hover:bg-gray-50 rounded-lg transition-colors">
+                Flashcards
+              </Link>
               <Link href="/endorsements" className="px-3 py-1.5 text-sm font-medium text-gray-600 hover:text-orange-600 hover:bg-gray-50 rounded-lg transition-colors">
                 Endorsements
               </Link>
+              <Link href="/states" className="px-3 py-1.5 text-sm font-medium text-gray-600 hover:text-orange-600 hover:bg-gray-50 rounded-lg transition-colors">
+                States
+              </Link>
               <Link href="/blog" className="px-3 py-1.5 text-sm font-medium text-gray-600 hover:text-orange-600 hover:bg-gray-50 rounded-lg transition-colors">
                 Blog
+              </Link>
+              <Link href="/progress" className="px-3 py-1.5 text-sm font-medium text-gray-600 hover:text-orange-600 hover:bg-gray-50 rounded-lg transition-colors">
+                My Progress
               </Link>
               <Link href="/start?test=cdl-general&mode=full" className="ml-2 px-3 py-1.5 text-sm font-semibold text-white bg-orange-600 rounded-lg hover:bg-orange-700 transition-colors">
                 Practice Now
