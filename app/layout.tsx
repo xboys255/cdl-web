@@ -3,6 +3,7 @@ import { Geist } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 
 const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 
@@ -78,6 +79,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </nav>
 
         <main className="flex-1">{children}</main>
+        <Analytics />
 
         <footer className="border-t border-gray-200 bg-white mt-auto">
           <div className="max-w-4xl mx-auto px-4 py-6 flex flex-col sm:flex-row items-center justify-between gap-3">
