@@ -8,6 +8,7 @@ import { Analytics } from "@vercel/analytics/next";
 const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 
 const adsenseClient = process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? "";
+const gaId = process.env.NEXT_PUBLIC_GA_ID ?? "";
 
 export const metadata: Metadata = {
   title: {
@@ -34,6 +35,20 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${geist.variable} h-full antialiased`}>
+      {gaId && (
+        <>
+          <Script
+            src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
+            strategy="afterInteractive"
+          />
+          <Script id="ga-init" strategy="afterInteractive">{`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${gaId}');
+          `}</Script>
+        </>
+      )}
       {adsenseClient && (
         <Script
           async
