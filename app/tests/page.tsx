@@ -5,7 +5,7 @@ import Link from "next/link";
 import { AdSlot } from "@/components/ui/AdSlot";
 
 export const metadata: Metadata = {
-  title: "Free CDL Practice Tests 2026 — All Knowledge Exams | CDLPrepKit",
+  title: "Free CDL Practice Tests 2026 — All Knowledge Exams",
   description: "Free CDL knowledge practice tests for General Knowledge, Air Brakes, HazMat, Combination Vehicles, Passenger, Tanker, and Doubles/Triples. Instant pass/fail scoring.",
   openGraph: {
     title: "Free CDL Practice Tests — All Knowledge Exams",

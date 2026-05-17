@@ -4,7 +4,7 @@ import { posts } from "@/lib/blog";
 import { AdSlot } from "@/components/ui/AdSlot";
 
 export const metadata: Metadata = {
-  title: "CDL Blog — Tips, Guides & Study Help | CDLPrepKit",
+  title: "CDL Blog — Tips, Guides & Study Help",
   description: "CDL study guides, endorsement tips, and trucking career advice. Learn how to pass your CDL knowledge tests and start your commercial driving career.",
   openGraph: {
     title: "CDL Blog — Tips, Guides & Study Help",

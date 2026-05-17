@@ -28,16 +28,8 @@ export function AdSlot({ slot, className = "", format = "auto" }: AdSlotProps) {
     }
   }, [client]);
 
-  // No publisher ID set — show placeholder (dev / pending approval)
-  if (!client) {
-    return (
-      <div
-        className={`flex items-center justify-center bg-gray-100 border border-dashed border-gray-300 rounded text-gray-400 text-xs min-h-[90px] ${className}`}
-      >
-        Ad — {slot}
-      </div>
-    );
-  }
+  // No publisher ID set — render nothing (hide empty space)
+  if (!client) return null;
 
   // "banner" is a legacy alias for "horizontal" in our codebase
   const adFormat = format === "banner" ? "horizontal" : format;

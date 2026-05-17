@@ -65,25 +65,25 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               CDL<span className="text-gray-900">PrepKit</span>
             </Link>
             <div className="flex items-center gap-1">
-              <Link href="/tests" className="px-3 py-1.5 text-sm font-medium text-gray-600 hover:text-orange-600 hover:bg-gray-50 rounded-lg transition-colors">
+              <Link href="/tests" className="hidden sm:block px-3 py-1.5 text-sm font-medium text-gray-600 hover:text-orange-600 hover:bg-gray-50 rounded-lg transition-colors">
                 Tests
               </Link>
-              <Link href="/quiz" className="px-3 py-1.5 text-sm font-medium text-gray-600 hover:text-orange-600 hover:bg-gray-50 rounded-lg transition-colors">
+              <Link href="/quiz" className="hidden lg:block px-3 py-1.5 text-sm font-medium text-gray-600 hover:text-orange-600 hover:bg-gray-50 rounded-lg transition-colors">
                 Quick Quiz
               </Link>
-              <Link href="/flashcards" className="px-3 py-1.5 text-sm font-medium text-gray-600 hover:text-orange-600 hover:bg-gray-50 rounded-lg transition-colors">
+              <Link href="/flashcards" className="hidden md:block px-3 py-1.5 text-sm font-medium text-gray-600 hover:text-orange-600 hover:bg-gray-50 rounded-lg transition-colors">
                 Flashcards
               </Link>
-              <Link href="/endorsements" className="px-3 py-1.5 text-sm font-medium text-gray-600 hover:text-orange-600 hover:bg-gray-50 rounded-lg transition-colors">
+              <Link href="/endorsements" className="hidden sm:block px-3 py-1.5 text-sm font-medium text-gray-600 hover:text-orange-600 hover:bg-gray-50 rounded-lg transition-colors">
                 Endorsements
               </Link>
-              <Link href="/states" className="px-3 py-1.5 text-sm font-medium text-gray-600 hover:text-orange-600 hover:bg-gray-50 rounded-lg transition-colors">
+              <Link href="/states" className="hidden lg:block px-3 py-1.5 text-sm font-medium text-gray-600 hover:text-orange-600 hover:bg-gray-50 rounded-lg transition-colors">
                 States
               </Link>
-              <Link href="/blog" className="px-3 py-1.5 text-sm font-medium text-gray-600 hover:text-orange-600 hover:bg-gray-50 rounded-lg transition-colors">
+              <Link href="/blog" className="hidden md:block px-3 py-1.5 text-sm font-medium text-gray-600 hover:text-orange-600 hover:bg-gray-50 rounded-lg transition-colors">
                 Blog
               </Link>
-              <Link href="/progress" className="px-3 py-1.5 text-sm font-medium text-gray-600 hover:text-orange-600 hover:bg-gray-50 rounded-lg transition-colors">
+              <Link href="/progress" className="hidden lg:block px-3 py-1.5 text-sm font-medium text-gray-600 hover:text-orange-600 hover:bg-gray-50 rounded-lg transition-colors">
                 My Progress
               </Link>
               <Link href="/start?test=cdl-general&mode=full" className="ml-2 px-3 py-1.5 text-sm font-semibold text-white bg-orange-600 rounded-lg hover:bg-orange-700 transition-colors">
