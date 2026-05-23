@@ -86,6 +86,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/progress" className="hidden lg:block px-3 py-1.5 text-sm font-medium text-gray-600 hover:text-orange-600 hover:bg-gray-50 rounded-lg transition-colors">
                 My Progress
               </Link>
+              <Link href="/about" className="hidden lg:block px-3 py-1.5 text-sm font-medium text-gray-600 hover:text-orange-600 hover:bg-gray-50 rounded-lg transition-colors">
+                About
+              </Link>
               <Link href="/start?test=cdl-general&mode=full" className="ml-2 px-3 py-1.5 text-sm font-semibold text-white bg-orange-600 rounded-lg hover:bg-orange-700 transition-colors">
                 Practice Now
               </Link>
@@ -108,6 +111,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/tests" className="hover:text-gray-600">Tests</Link>
               <Link href="/endorsements" className="hover:text-gray-600">Endorsements</Link>
               <Link href="/blog" className="hover:text-gray-600">Blog</Link>
+              <Link href="/about" className="hover:text-gray-600">About</Link>
+              <Link href="/contact" className="hover:text-gray-600">Contact</Link>
               <Link href="/privacy" className="hover:text-gray-600">Privacy</Link>
               <Link href="/terms" className="hover:text-gray-600">Terms</Link>
             </div>
