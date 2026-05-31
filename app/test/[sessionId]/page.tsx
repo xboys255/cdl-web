@@ -44,9 +44,32 @@ export default async function TestPage({ params, searchParams: _sp }: Props) {
     );
   }
 
+  // Deterministic shuffle so answer order is consistent across page reloads
+  // but different for each question (seeded by sessionId + questionId)
+  function seededShuffle<T>(arr: T[], seed: number): T[] {
+    const a = [...arr];
+    let s = seed >>> 0;
+    for (let i = a.length - 1; i > 0; i--) {
+      s = Math.imul(s ^ (s >>> 16), 0x45d9f3b);
+      s = Math.imul(s ^ (s >>> 16), 0x45d9f3b);
+      s = s ^ (s >>> 16);
+      const j = (s >>> 0) % (i + 1);
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+  function strHash(str: string): number {
+    let h = 0x811c9dc5;
+    for (let i = 0; i < str.length; i++) {
+      h ^= str.charCodeAt(i);
+      h = Math.imul(h, 0x01000193);
+    }
+    return h >>> 0;
+  }
+
   const questions = session.answers.map((sa: AnswerRow) => ({
     ...sa.question,
-    answers: sa.question.answers,
+    answers: seededShuffle(sa.question.answers, strHash(sessionId + sa.questionId)),
   }));
 
   // Restore previously selected answers so they show on reload
